@@ -1,0 +1,711 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* background-color: #0b0e11; */
+}
+
+body {
+    background-color: #0b0e11; 
+}
+
+/* עיצוב הכותרת הראשית */
+
+.titleWebsite a {
+    cursor: pointer;
+    font-size: 35px;
+    color: #f0b90b;
+    font-family: binanceFont;
+    margin-right: 15px;
+    text-decoration: none;
+
+}
+@font-face {
+    font-family: binanceFont;
+    src: url(./asset/font/GothamBold.ttf);
+}
+
+/* header */
+
+.header {
+    margin-top: 15px;
+    margin-left: 15px;
+    display: flex;
+    justify-content: start;
+    background-color: #0b0e11;
+    
+}
+
+.trade-header 
+ {
+    color:white;
+    padding: 10px;
+    
+}
+
+.favorite-header {
+    color: white;
+    padding: 10px;
+}
+
+.about{
+    color: white;
+    padding: 10px;
+}
+
+.trade-header:hover {
+    background-color: rgba(128, 128, 128, 0.466);
+    border-radius: 7px;
+    cursor: pointer;
+    color:white;
+    padding: 10px;
+    
+}
+
+.favorite-header:hover {
+    background-color: rgba(128, 128, 128, 0.466);
+    border-radius: 7px;
+    cursor: pointer;
+    color: white;
+    padding: 10px;
+}
+
+.about:hover {
+    background-color: rgba(128, 128, 128, 0.466);
+    border-radius: 7px;
+    cursor: pointer;
+    color: white;
+    padding: 10px;
+}
+
+.numberOfFavorite {
+    color: white;
+    padding: 5px;
+    border: 1px solid white;
+    border-radius: 50%;
+  }
+
+
+/* style divs and section */
+
+.cryptoSection {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #181a20;
+    padding-left: 10%;
+    padding-right: 10%;
+    
+    padding-bottom: 50px;
+}
+
+
+/* עיצוב כרטיסיות של המטבעות */
+
+.coinDiv {
+    width: 250px;
+    height: 350px;
+    background-color: #0b0e11; 
+    margin: 10px;
+    border-radius: 7px;
+
+}
+
+.imageCoin {
+   padding-top: 10px;
+   margin: auto;
+   display: block;
+   height: 40px;
+}
+
+.nameAndSymbol{
+    margin: 10px;
+}
+
+ 
+.coinSymbol {
+    text-align: center;
+    color: aliceblue;
+
+}
+
+.coinName {
+    text-align: center;
+    color: aliceblue;
+
+
+}
+
+.numbers {
+    color: aliceblue;
+    font-size: 16px;
+    text-align: center;
+    font-size: 18px;
+    margin: 10px;
+
+}
+
+.buttonDetails {
+    padding: 10px;
+    border: 0PX;
+    color: #f0b90b;
+    background-color: #0b0e11;
+    margin-top: 20px;
+    font-size: 15px;
+
+}
+
+.buttonFavorite {
+    padding: 10px;
+    border: 0PX;
+    color: #f0b90b;
+    background-color: #0b0e11;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-top: 20px;
+    font-size: 15px;
+}
+
+.buttonDetails:hover {
+    background-color: rgba(128, 128, 128, 0.466) ;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.buttonFavorite:hover {
+    background-color: rgba(128, 128, 128, 0.466) ;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.line {
+    border: 1px solid gray;
+    width: 80%;
+    margin: auto;
+}
+
+.heartIcon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 45%;
+    color: red;
+    font-size:18px;
+    display: none;
+}
+
+
+.moreInfoDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loadingData {
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+    /* margin: 45%; */
+    
+}
+
+/* mobile Style */
+
+
+
+  @media all and (min-width: 350px) and (max-width: 650px) {
+
+    .header {
+        display: block;
+        text-align: center;
+    }
+
+    .cryptoSection {
+
+        box-sizing: border-box;
+        max-width: 100%;
+        
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        background-color: #181a20;
+        /* padding-left: 10%;
+        padding-right: 10%; */
+    }
+    
+
+
+    .coinDiv {
+
+        width: 300px;
+        height: 450px;
+
+        max-width: 350px;
+        max-height: 450px;
+        background-color: #0b0e11; 
+        margin: 10px;
+        border-radius: 7px;
+    
+    }
+
+    .imageCoin {
+        margin: auto;
+        display: block;
+        height: 50px;
+     }
+     
+      
+     .coinSymbol {
+        text-align: center;
+        color: aliceblue;
+        font-size: 35px;
+        padding-bottom: 10px;
+        font-family: 'Times New Roman', Times, serif;
+     }
+     
+     .coinName {
+         text-align: center;
+         color: aliceblue;
+         font-size: 25px;
+         
+
+     }
+     
+     .numbers {
+         color: aliceblue;
+         font-size: 25px;
+         text-align: center;
+         
+     
+     }
+     
+     .buttonDetails {
+         
+         font-size: 20px;
+         border: 0PX;
+         color: #f0b90b;
+         background-color: #0b0e11;
+ 
+     
+     }
+     
+     .buttonDetails:hover {
+         background-color: rgba(128, 128, 128, 0.466) ;
+         border-radius: 7px;
+         cursor: pointer;
+     }
+
+     .searchDiv {
+        display: flex;
+        align-items: flex-start;
+        justify-content:start ;
+
+        /* padding-right: auto; 
+        padding-left: auto; */
+        padding-bottom: 40px;
+        
+     }
+
+     .searchDiv > i{
+        position: absolute;
+        display: flex;
+        align-items: flex-start;
+        justify-content:start ;
+        margin-right:220px ;
+        margin-bottom: 10px;
+    }
+  } 
+
+
+/* search */
+
+
+
+.searchDiv {
+    margin-top: 100px;
+    padding-top: 50px;
+    padding-left: 50px;
+    background-color: #181a20;
+}
+
+.searchDiv > i{
+    position: absolute;
+ 
+}
+
+.icon {
+    padding-left: 5px;
+    margin-left: 10px;
+    margin-top: 10px;
+    color: gray;
+    cursor: pointer;
+    
+}
+
+.input-field {
+    border: 2px solid gray;
+    color: #f0b90b;
+    border-radius: 5px;
+    outline: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 50px;
+    text-align: center;
+    background-color: #181a20;
+
+}
+
+
+
+/* כפתור טעינת עוד מטבעות */
+
+.loadMoreDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loadMoreButton {
+    margin-top: 20px;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 7px;
+    background-color: #f0b90b;
+    border: 0px;
+    color: black;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* loading */
+
+.loadingAnimation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+#lds-ripple {
+    position: relative;
+    width: 80px;
+    height: 80px;
+  }
+  #lds-ripple div {
+    position: absolute;
+    border: 4px solid #f0b90b;
+    opacity: 1;
+    border-radius: 50%;
+    animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+  }
+ #lds-ripple div:nth-child(2) {
+    animation-delay: -0.5s;
+  }
+  @keyframes lds-ripple {
+    0% {
+      top: 36px;
+      left: 36px;
+      width: 0;
+      height: 0;
+      opacity: 0;
+    }
+    4.9% {
+      top: 36px;
+      left: 36px;
+      width: 0;
+      height: 0;
+      opacity: 0;
+    }
+    5% {
+      top: 36px;
+      left: 36px;
+      width: 0;
+      height: 0;
+      opacity: 1;
+    }
+    100% {
+      top: 0px;
+      left: 0px;
+      width: 72px;
+      height: 72px;
+      opacity: 0;
+    }
+  }
+  
+
+/* ///////////////////////////////////////////////////////////////////// */
+/*/////////////////// NEW DESIGN TO MORE INFO //////////////////////////*/
+/* ///////////////////////////////////////////////////////////////////// */
+
+
+.modal-box {
+    
+    /* width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    position: absolute;
+    padding: 15px;
+    border: 2px solid #f0b90b; */
+    
+    background-color: #181a20;
+    
+    
+}
+
+.headerDiv {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.iconDetails{
+    color: #f0b90b;
+    /* display: flex; */
+    /* justify-content: end; */
+    margin-left: auto;
+    /* padding: 10px; */
+    
+    /* padding: 15px; */
+    font-size: 25px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+
+.firstDetails {
+
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+
+}
+
+.nameCoin {
+    color: #f0b90b;
+}
+
+
+
+.priceDiv {
+    display: flex;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+
+
+
+.textPrice {
+    font-size: 18px;
+    font-family: tahoma;
+    font-weight: 600;
+    color: #f0b90b;
+}
+
+.livePrice {
+    margin-left: 20px;
+    padding-bottom: 10px;
+    color: green;
+    font-size: 18px;
+    font-family: tahoma;
+    font-weight: 600;
+    
+}
+
+.liveData {
+    display: flex;
+    text-align: center;
+ 
+}
+
+
+.liveData div {
+    padding: 10px;
+    font-size: 16px;
+    margin: 10px;
+    color: aliceblue;
+
+}
+
+.liveData > div > b {
+    margin-bottom: 10px;
+    color: #f0b90b;
+}
+
+
+
+
+
+
+.chartContainer {
+    position: absolute;
+    width: 50%;
+    height: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #181a20;
+    padding: 10px;
+    /* padding-bottom: 100%;
+    padding-right: 100%; */
+
+}
+
+
+
+
+@media all and (min-width: 350px) and (max-width: 650px) {
+
+    .modal-box {
+
+    }
+
+    .headerDiv {
+        /* display: flex;
+      
+        padding: 10px; */
+    }
+
+    .firstDetails {
+         display: block;
+        margin-top: 20px;
+        margin-left: 10px;
+        margin-bottom: 20px; 
+    
+    }
+
+    .nameCoin {
+        color: #f0b90b;
+        margin-right: 35%;
+        display: block;
+    }
+
+
+    .chartContainer {
+        position: absolute;
+        width: 95%;
+        height: 40%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #181a20;
+        padding: 10px;
+        overflow: hidden;
+
+    
+    }
+     
+
+    
+
+    .firstDetails {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .priceDiv {
+
+    }
+
+    .liveData {
+       display: flex;
+       justify-content: space-evenly;
+        text-align: center;
+        flex-wrap: wrap;
+     
+    }
+  
+
+
+
+.iconDetails{
+    color: #f0b90b;
+
+    margin-left: auto;
+
+    font-size: 25px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+}
+
+/* About */
+
+.about-me {
+    background-color: #181a20;
+    margin-top: 50px;
+}
+
+.textAbout {
+    text-align: center;
+    padding-top: 20px;
+    font-size: 25px;
+    color: #f0b90b;
+    font-weight: 600;
+}
+
+.listAbout {
+    padding: 15px;
+    list-style-type: none;
+}
+
+.headerListAbout {
+    text-align: center;
+    padding-top: 20px;
+    font-size: 25px;
+    color: #f0b90b;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.liAbout {
+    color: #f0b90b;
+    text-align: center;
+    padding: 10px;
+    font-size: 18px;
+
+}
+
+.divSocialAbout {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.socialAbout {
+    color: #f0b90b;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.copyrights {
+    color: #f0b90b;
+    text-align: center;
+    padding: 20px;
+
+}
+
+.aboutHeader {
+    color: #f0b90b;
+    font-size: 35px;
+    text-align: center;
+    padding: 20px;
+    margin: 20px;
+    
+}

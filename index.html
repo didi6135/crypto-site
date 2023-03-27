@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto</title>
+    <!-- <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script> -->
+    <!-- <script defer src="https://cdn.jsdelivr.net/npm/chart.js"></script> -->
+    <script type = "text/javascript" src = "https://canvasjs.com/assets/script/canvasjs.min.js" ></script>
+    <script type="text/javascript" src="https://unpkg.com/lightweight-charts/dist/lightweight-charts.standalone.production.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="./jquery-3.6.3.js"></script>
+    <link rel="stylesheet" href="./style.css">
+    <script defer src="./script.js"></script>
+</head>
+<body>
+    
+    <nav id="header" class="header">
+        <h1 class="titleWebsite"><a href="./index.html">CRYPTOLI</a></h1>
+        <!-- <h3 class="trade-header">Trade</h3> -->
+        <h3 class="about" id="about">About</h3>
+        <h3  id="favoriteCounter" onclick="favoriteCoin()" class="favorite-header ">Favorite Coins - 0/5</h3>
+    </nav>
+        
+    
+    <div id="searchDiv" class="searchDiv">
+        <i id="searchInput" class="fa fa-search icon"></i>
+        <input  id="inputCryptoSearch" class="input-field fa fa-search" type="search" placeholder="Search Coin Name">
+        <!-- <span><p id="notFound">Coin Not Found</p></span> -->
+    </div>
+
+    <!-- Crypto section -->
+    <section id="cryptoSection" class="cryptoSection">
+        
+    </section>
+    
+    <!-- More Info -->
+    
+    <div id="fullInfo">
+        
+    </div>
+    
+    
+    <div class="loadingAnimation">
+        <div id="lds-ripple"><div></div><div></div></div>
+    </div>
+    <div class="loadMoreDiv" id="buttonLoadMore">
+        <button id="addNewCoins" class="loadMoreButton">Load More Coins</button>
+    </div>
+
+    <!-- popup full info -->
+
+    <section>
+        <!-- <div  id="popupFullInfo" class="popupFullInfo"></div> -->
+        <div id="firstData"></div>
+        <div id="chartContainer" class="chartContainer" ></div>
+        <div id="lastData"></div>
+        
+    </section>
+
+    <!-- Favorite Coins -->
+
+    <section id="favoriteSection" class="favoriteSection">
+
+    <!-- </section>
+    <canvas id="chartContainer"></canvas>
+
+    <div>
+        <canvas id="myChart"></canvas>
+      </div> -->
+      <!-- <button onclick="chart()">reload</button> -->
+<div id="canvasJs" class="canvasJs"></div>
+
+    <div id="about-me" class="about-me"> 
+         <h1 class="aboutHeader">About The Project</h1>
+        <p class="textAbout">DAVID AMAGID</p>
+    
+        <h5 class="textAbout">FullStack Devleoper</h5>
+        
+        <ul class="listAbout">
+
+            <h3 class="headerListAbout">languages Programming</h3>
+            <li class="liAbout">HTML</li>
+            <li class="liAbout">CSS</li>
+            <li class="liAbout">JavaScript</li>
+            <li class="liAbout">Jquery</li>
+            <br>
+        </ul>
+        <ul class="listAbout">
+
+            <h3 class="headerListAbout">Functions</h3>
+            <li class="liAbout">Callbacks, Promises, Async Await</li>
+            <li class="liAbout">Single Page Application foundations</li>
+            <li class="liAbout">Events</li>
+            <li class="liAbout">DOM</li>
+            <li class="liAbout">Ajax (RESTful API) </li>
+        </ul>
+        <br>
+        <ul class="listAbout">
+
+            <h3 class="headerListAbout">Libraries</h3>
+            <li class="liAbout">Trading View</li>
+            <li class="liAbout">Canvas Js</li>
+            <li class="liAbout">Jquery</li>
+            <li class="liAbout">cdnjs</li>
+            <br>
+        </ul>
+           
+        <div class="divSocialAbout">
+
+            <a  class="socialAbout icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a>
+            <a  class="socialAbout icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a>
+            <a  class="socialAbout icoLinkedin"title="Linkedin"><i class="fa fa-linkedin"></i></a>
+        
+        </div>
+        
+        <p class="copyrights"> David Amagid Copyrights &COPY; 2023</p>
+    </div>
+</body>
+</html>
+
+
